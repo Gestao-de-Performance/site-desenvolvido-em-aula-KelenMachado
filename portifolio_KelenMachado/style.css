@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Versão Desktop */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Utilitários */
+.displayFlex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.removeDecoration {
+    text-decoration: none;
+    color: inherit;
+}
+
+.marginSite {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.marginResponsiva {
+    margin-left: 10px;
+}
+
+/* Cabeçalho */
+nav {
+    background-color: #003366;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    font-weight: bold;
+}
+
+.tamanhoBotaoCabecalho {
+    padding: 10px 15px;
+    font-size: 16px;
+}
+
+.marginBotaoCabecalho {
+    margin-right: 10px;
+}
+
+.bordaBusca {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: white;
+}
+
+.inputBusca {
+    border: none;
+    padding: 10px;
+    outline: none;
+    width: 150px;
+}
+
+.botaoBusca {
+    background: #003366;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* Sessões principais */
+.backgroundContainerSobre {
+    background-color: #e9f1f7;
+    padding: 40px 20px;
+}
+
+.subtituloSobre,
+.subtituloMissao,
+.subtituloValores,
+.subtituloHabilidades,
+.subtituloTrabalhos,
+.subtituloConclusao,
+.subtituloContato {
+    font-size: 24px;
+    margin: 20px 0 10px;
+    color: #003366;
+}
+
+.textoSobre,
+.textoMissao,
+.textoValores,
+.textoHabilidadesHS,
+.textoConclusao {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Containers internos */
+.containerSobre,
+.containerMissao,
+.containerValores,
+.containerHabilidadesHS,
+.containerHabilidadesSS,
+.containerTrabalhos,
+.containerConclusao {
+    margin-top: 20px;
+}
+
+.containerTrabalhos img,
+.containerHabilidadesHS img,
+.containerValores img,
+.containerMissao img {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.containerConclusao img {
+    width: 200px;
+    margin-bottom: 15px;
+}
+
+/* Rodapé */
+footer {
+    background-color: #003366;
+    color: white;
+    padding: 20px 0;
+}
+
+.marginRodape {
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.containerRedesSociais img {
+    width: 32px;
+    margin: 0 5px;
+}
+
+.subtituloContato {
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+/* === Estilo Móbile === */
+@media (max-width: 768px) {
+
+    .displayFlex {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .marginSite {
+        padding: 15px;
+    }
+
+    .gapCabecalhoBotoes {
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: flex-start;
+    }
+
+    .tamanhoBotaoCabecalho {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .inputBusca {
+        width: 100%;
+    }
+
+    .bordaBusca {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .backgroundContainerSobre {
+        padding: 20px 15px;
+    }
+
+    .subtituloSobre,
+    .subtituloMissao,
+    .subtituloValores,
+    .subtituloHabilidades,
+    .subtituloTrabalhos,
+    .subtituloConclusao,
+    .subtituloContato {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .textoSobre,
+    .textoMissao,
+    .textoValores,
+    .textoHabilidadesHS,
+    .textoConclusao {
+        font-size: 15px;
+        text-align: justify;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    .containerRedesSociais {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .containerRedesSociais img {
+        margin: 10px 5px;
+    }
+
+    .marginRodape {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .subtituloContato {
+        margin-bottom: 10px;
+    }
+}
